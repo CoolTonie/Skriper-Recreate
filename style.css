@@ -1,0 +1,24 @@
+body{
+    background-color: #131313;
+}
+.one, .two, .three, .four{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+}
+ img{
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    margin-right: 40px;
+}
+.text h2{
+    color: #eeeeee;
+    font-size: 20px;
+    text-align: start;
+}
+.text p{
+    color: #eeeeee;
+    font-size: 16px;
+}
