@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?familfamily=Poppins:wght@300;400;500;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,12 +13,12 @@
     }
 
 /* this is the navbar styles */
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     
 }
-.logo{
+.logo {
     width: 40px;
     height: 40px;
     background-color: #131313;
@@ -54,8 +54,9 @@ ul {
  
   /* section four styling */
 
-.section-four{
+.section-four {
     margin: auto 200px;
+} 
 
 .one, .two, .three, .four {
     display: flex;
