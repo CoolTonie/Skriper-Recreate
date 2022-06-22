@@ -38,7 +38,6 @@ ul {
   
   li a {
     display: flex;
-    justify-content: space-around;
     color: rgb(204, 201, 201);
     text-align: center;
     padding: 5px 5px;
@@ -56,7 +55,8 @@ ul {
 
 .section-four {
     margin: auto 200px;
-} 
+
+}
 
 .one, .two, .three, .four {
     display: flex;
