@@ -56,6 +56,10 @@ ul {
 .section-four{
     margin: auto 200px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> da8cc541fd835e1d3f5134a6a4557916eff5bd46
 .one, .two, .three, .four {
     display: flex;
     flex-direction:row;
