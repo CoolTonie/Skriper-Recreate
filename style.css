@@ -15,7 +15,6 @@
 /* this is the navbar styles */
 
 header{
-    background: #131313;
     width: 100%;
     margin: auto;
     justify-content: space-between;
@@ -26,9 +25,8 @@ header{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
-    /* opacity: .7; */
+    opacity: .7;
     color: rgb(238, 238, 238);
-    background-color:#131313 ;
     width: 100%;
         
 }
@@ -43,7 +41,6 @@ header{
 
 ul {
     overflow: hidden;
-    background-color: #131313;
     display: flex;
     list-style-type: none;
     position:fixed;
@@ -96,7 +93,7 @@ ul {
     width:16px;
     margin-right: 7px;
   }
-  img a:hover {
+  .navbar a:hover {
     color: rgb(255, 254, 254);
   }
 
