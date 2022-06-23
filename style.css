@@ -15,7 +15,7 @@
 /* this is the navbar styles */
 
 header{
-    background-color: #131313;
+    background: #131313;
     width: 100%;
     margin: auto;
     justify-content: space-between;
@@ -46,63 +46,28 @@ ul {
     background-color: #131313;
     display: flex;
     list-style-type: none;
-<<<<<<< HEAD
-    /* position:fixed;
-    top:o; */
+    position:fixed;
+    right: 0;
     justify-content: center;
     align-items: flex-end;
     }
-=======
-}
->>>>>>> 7b87addc255fb23a15cf07c4ad28645b18fa3246
   
   
   li  a {
     color: rgb(204, 201, 201);
-<<<<<<< HEAD
     text-align: center;
     padding: 5px 15px;
     text-decoration: none;
     margin-top: 15px;
   }
 
-=======
-    /* text-align: center; */
-    padding: 7px 15px;
-    margin:0 10px;
-    text-decoration: none;
-    margin-top: 15px;
-  }
-  li:nth-child(4) a:nth-child(1){
-    background-color: rgb(52, 115, 252);
-    color: #fff;
-    font-weight: 500;
-    border-radius: 3px;
-  }
-  li:nth-child(5) a:nth-child(1){
-    background-color: #000000;
-    border-radius: 3px;
-    border: 1px solid #615f5f;
-  }
-  li:nth-child(6) a:nth-child(1){
-    background-color: #000000;
-    border-radius: 3px;
-    border: #615f5f 1px solid;
-    padding: 7px 10px;
-
-  }
-  i{
-    margin-top:3px ;
-    width: 5px;
-  }
->>>>>>> 7b87addc255fb23a15cf07c4ad28645b18fa3246
   
   
   .navbar li button{
     font-weight: 700;
     border: 0;
     box-shadow: 0 0 20px #000;
-    background-color: #33a9dc;
+    background: linear-gradient(160deg, #33a9dc,#4c83ff);
     padding: 7px 5px;
     font-family: "Open Sans", sans-serif;
     border: 1px solid #eeeeee;
