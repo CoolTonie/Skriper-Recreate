@@ -135,7 +135,71 @@ ul {
     color: rgb(255, 254, 254);
   }
 
- 
+
+/* CSS for Section 2 */
+
+  body {
+    background-color: #000000;
+  }
+  
+  .section2 {
+    letter-spacing: normal;
+    margin: auto 250px;
+  }
+  
+  .imglogo {
+    align-content: center;
+    margin: 80px 250px 0 310px;
+    width: 256px;
+    height: 75px;
+    fill: none;
+
+  }
+.the-place {
+    text-align: center;
+    line-height: 90px;
+    font-size: 70px;
+    display: block;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(
+      292.46deg,
+      #27ae60 17.79%,
+      #2f80ed 35.92%,
+      #9b51e0 54.06%,
+      #eb5757 71.08%,
+      #f2994a 87.36%
+    );
+  }
+  
+.the-playground {
+    color: #eee;
+    text-align: center;
+    line-height: 30px;
+    font-size: 26px; 
+    float: none;
+    position: static;
+    margin: 15px;
+  }
+  
+  .js-editor {
+    height: 489px;
+    width: 752px;
+    margin-bottom: 20px !important;
+    font-size: 16px;
+    padding: 0;
+  }
+  
+  .explore {
+    color: #eee;
+    text-align: start;
+    line-height: normal;
+    font-size: 1.2rem;
+  }
+  
+  /* for now, i am stopping the CSS for section 2 here */
+  
+
   /* section four styling */
 
 .section-four {
