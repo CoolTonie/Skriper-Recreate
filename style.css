@@ -56,6 +56,7 @@ ul {
 
 .section-four{
     margin: auto 200px;
+}
 
 .one, .two, .three, .four {
     display: flex;
