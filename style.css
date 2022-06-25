@@ -104,15 +104,17 @@ ul {
     background-color: #000000;
   }
   
-  .section2 {
-    letter-spacing: normal;
-    margin: auto 250px;
+  .container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
   }
   
   .imglogo {
     align-content: center;
     margin: 80px 250px 0 310px;
-    width: 256px;
+    width: 50%;
+    max-width: 280px;
     height: 75px;
     fill: none;
 
@@ -120,7 +122,7 @@ ul {
 .the-place {
     text-align: center;
     line-height: 90px;
-    font-size: 70px;
+    font-size: 80px;
     display: block;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -145,29 +147,52 @@ ul {
   }
   
   .js-editor {
-    height: 489px;
-    width: 752px;
+    width: 90%;
     margin-bottom: 20px !important;
     font-size: 16px;
-    padding: 0;
+    padding:0 90px;
   }
   
   .explore {
     color: #eee;
     text-align: start;
     line-height: normal;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
   
   /* for now, i am stopping the CSS for section 2 here */
+
+  /* section three styling  */
+.col{
+    display: flex;
+}
+.col img{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 350px;
+    margin-left: 15px;
+}
+.row{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.row h2{
+    color: #eeeeee;
+    text-align:start;
+    font-size: 32px;
+}
+.row p{
+    text-align: start;
+    font-size: 18px;
+    color: #eeeeee;
+}
+  /* end of section three styling */
   
 
   /* section four styling */
-
-.section-four {
-    margin: auto 200px;
-
-}
 
 .one, .two, .three, .four {
     display: flex;
@@ -189,7 +214,7 @@ ul {
 }
 .text p{
     color: #eeeeee;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
