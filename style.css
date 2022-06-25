@@ -87,7 +87,7 @@ ul {
     justify-content: space-between;
 }
 .footer {
-    color: var(--light-color);
+    color: #eee;
     margin-top: 50px;
     background-color: hsla(0,0%,100%,.05);
 }
@@ -115,7 +115,7 @@ span.logo-container img {
     fill: none;
 }
 
-.footer-info{
+.footer-info {
     display: flex;
     justify-content: space-between;
 }
@@ -174,33 +174,185 @@ span.contact-email img {
 
 
 /* this is styles for faq page */
-.faq-container {
-    display: block;
-    padding: 50px;
-    max-width: 1400px;
+
+.section {
+    width: 100%;
+    background: #414141;
     margin: 0 auto;
-    padding-left: 20px!important;
-    padding-right: 20px!important;
+    max-width: 1400px;
 }
 
-.searchbar {
-    display: flex;
-    padding-top: 10px!important;
-    padding-bottom: 10!important;
-    grid-gap: 20px;
-    gap: 20px;
-    flex-wrap: wrap;
+.faq-container {
+    width: 100%;
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.toolbar {
-    display: flex;
+.search-toolbar {
     background: rgba(37,37,37,.8);
     width: 100%;
     border-radius: 2px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 10px!important;
-    padding-right: 10px!important; 
-    grid-gap: 10px;
-    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
+
+.input-label input {
+    border-radius: 2px;
+    border: 0;
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    outline: 0;
+    font-family: Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+}
+
+.search-segment-parent {
+    display: flex;
+    align-items: stretch;
+    margin: 0 20px;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: #424242;
+}
+
+.search-label-modded {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    min-width: 120px;
+    display: flex;
+    color: #eee;
+    background-color: hsla(0,0%,100%,.05);
+    flex: 120px 0 0;
+    font-weight: 500;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.search-input-modded {
+    width: 100%;
+    padding-left: 20px;
+    background-color: #414141 !important;
+    border-radius: 0 !important;
+}
+
+.search-button {
+    border: 0;
+    border-radius: 2px;
+    text-transform: uppercase;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    background: #424242;
+    color:#eee;
+    position: relative;
+    align-content: center; 
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.search-submit-button {
+    width: 51px;
+    background-color: hsla(0,0%,100%,.05) !important;
+}
+
+.faq {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.faq-q {
+   background: #414141;
+   border-radius: 2px;
+   margin-bottom: 10px;
+   padding: 10px 20px;
+}
+
+.faq-link {
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    background: #414141;
+    color: #eee;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-link i  {
+    color:rgb(204, 201, 201);
+}
+
+.faq-link .ion-md-remove, .ion-md-add {
+    display: none;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background: #414141;
+    transition: max-height 650ms;
+}
+
+.answer::before {
+    content: "";
+    position: absolute;
+    width: 0.6rem;
+    height: 90%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%)
+}
+
+.answer p {
+    color: #eee;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    line-height: 1.5rem;
+}
+
+.faq-q:target .answer {
+    max-height: 20rem;
+}
+
+.faq iframe {
+    display: block;
+    margin: 20px auto auto;
+    border: 10px solid #222;
+    border-radius: 2px;
+    width: 560;
+    height: 315;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,161 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ion icons for toggle between questions and answers -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>The place where your ideas come true•skriper</title>
 </head>
+
 <body>
     <header>
         <!-- this is the navigation bar -->
         <nav class="navbar">
-        <a href="index.html"><img class=logo src="./imgforhome/skriper-logo-navbar.jpeg" alt="skriperlogo"></a>
-        <ul>
-            <li><a href="trends.html">Trends</a></li>
-            <li><a href="featured.html">Featured</a></li>
-            <li><a href="startcoding.html">Start Coding</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="search.html">search</a></li>
-            <li><a href="faq.html">Help</a></li>
-        </ul>
+            <a href="index.html"><img class=logo src="./imgforhome/skriper-logo-navbar.jpeg" alt="skriperlogo"></a>
+            <ul>
+                <li><a href="trends.html">Trends</a></li>
+                <li><a href="featured.html">Featured</a></li>
+                <li><a href="startcoding.html">Start Coding</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="search.html">search</a></li>
+            </ul>
     </header>
+    <section> 
+        <div class="faq-container">
 
-    <!-- this is the body for the faq page -->
-    <div class="faq-container">
-        <div class="searchbar">
-            <div class="toolbar">
-                <div style="width: 100%;">
-                    <div class="input search"> 
-                        <label>Search</label>
-                        <input id type="text" placeholder=":Search">
-                        <button class="button"> <span class="icon-container"> <img src=""> </span> 
-                        </button>
+            <div class="search-toolbar">
+                <div class="input-label search-segment-parent">
+                    <label class="search-label-modded">Search</label>
+                    <input class="search-input-modded" id type="text" placeholder="Search...">
+                    <button class="search-button search-submit-button"> <img src="./imgforhome/searchicon.svg"></button>
+                </div>
+            </div>
+            
+            <div class="faq">
+                
+                <div class="faq-q" id="q1">
+                    <a class="faq-link" href="#q1">
+                        Where can I change my password?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            "Our platform uses a dynamic password system which changes each time it is used, this key is sent by
+                            email when requested, for this reason, there is no fixed password or option to change the password
+                            or recover it."
+                        </p>
                     </div>
-                    <div class="hint"></div>
+                </div>
+
+                <div class="faq-q" id="q2">
+                    <a class="faq-link" href="#q2">
+                        How can I delete my account?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            "On your profile page you can request the deletion of your account, this process can take up to 8
+                            days to complete"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-q" id="q3">
+                    <a class="faq-link" href="#q3">
+                        I received an email with a temporary password to access, but I did not request it, what should I
+                        do?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            "No need to worry, your account is safe. If you didn't request the access code, don't worry, you may
+                            simply omit the email and that would be it. This can happen because someone entered a wrong email or
+                            tried to access your account, but as long as you do not share the code that you received, your
+                            account is safe."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-q" id="q4">
+                    <a class="faq-link" href="#q4">
+                        After deleting my account, can I get the codes back?"
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            "No, if the deletion has already been executed, you will no longer be able to recover your codes."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-q" id="q5">
+                    <a class="faq-link" href="#q5">
+                        Can I cancel the request to delete my account?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            "Yes, as long as the process has not been executed. At any time you can access your profile and in
+                            the account tab you can cancel the application process."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-q" id="q6">
+                    <a class="faq-link" href="#q6">
+                        How can I contact a user?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            "If the user has social networks added to their profile, you only need to click on one of them and
+                            you will be instantly redirected to their page from which you can establish direct contact with the
+                            user."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-q" id="faq-q7">
+                    <a class="faq-link" href="#q7">
+                        Can I downgrade if I delete my codes?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            Yes, but with certain conditions, you will not lose your level if you are an activer user, but if a
+                            period of 6 months of inactivity passes in your account you can lose your level, it will be
+                            recalculated according to your active codes on the platform."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-q" id="q8">
+                    <a class="faq-link" href="#q8">
+                        Do the created codes have any limits?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            "Each code you save must be less than 500KB in size and snippets must be less than 150KB"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-q" id="q9">
+                    <a class="faq-link" href="#q9">
+                        How many codes can I have?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            "The number of codes allowed depends on the level you have in your account, check the table of
+                            levels and their benefits in your profile page. Snippets have no limits and limitations are not taken
+                            into account."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-q" id="q10">
+                    <a class="faq-link" href="#q10">
+                        What licenses do the published codes have in skriper.dev?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            "When you publish code to skriper.dev it is then licensed under the MIT license. If your code is
+                            private we do not give it any license and you can license it as you may please, we recommend that
+                            you include the type of license as a comment in your code. Remember that when publishing a code in
+                            skriper.dev publicly other users can "fork" your code, skriper.dev keeps as a reference the original
+                            code from where the fork was made as an attribution of respective credits."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-q" id="q11">
+                    <a class="faq-link" href="#q11">
+                        What are account levels?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            "These are ranges that allow accounts to be identified. These ranges are obtained by fulfilling some
+                            parameters that are described in your profile page."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-q" id="q12">
+                    <a class="faq-link" href="#q12">
+                        What do I do if my code is copied?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            "Copying a code is performing a "copy & paste" and not a fork, the fork maintains the respective
+                            relationship with the code from which it was copied, but if you consider that the code was copied,
+                            you can send us a review request to our email. If you want to disable the fork option in your code,
+                            just go to settings in the editor and disable the fork option."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-q faq-video" id="q13">
+                    <a class="faq-link" href="#q13">
+                        How can I add a mockup phone in my preview?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            "In your CSS add the next decoratoe:"
+                            <code>/* @skriper mockup:phone */</code>
+                            <iframe src="#" title="How can I add a mockup phone im my preview"></iframe>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-q faq-video" id="q14">
+                    <a class="faq-link" href="#q14">
+                        How to create picture of my code and share it
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            "Only select your code and press"
+                            <b>CTRL + Enter</b>
+                            "and customize your picture. In the next video we will show how you can execute your JS code and
+                            share it."
+                            <iframe src="#" title="How to create picture of my code and share it"></iframe>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-q faq-video" id="q15">
+                    <a class="faq-link" href="#q15">
+                        How to Include External CDN Library
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            <iframe src="#" title="How to Include External CDN Library"></iframe>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-q faq-video" id="q16">
+                    <a class="faq-link" href="#q16">
+                        How to Create Gradients
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            <iframe src="#" title="How to Create Gradients"></iframe>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div faq-page>
-            <div class="faq">
-                <h2>Where can I change my password?</h2>
-                <p>"Our platform uses a dynamic password system which changes each time it is used, this key is sent by email when requested, for this reason, there is no fixed password or option to change the password or recover it."
-                </p>
-            </div>
-            <div class="faq">
-                <h2>How can I delete my account?</h2>
-                <p>"On your profile page you can request the deletion of your account, this process can take up to 8 days to complete"
-                </p>
-            </div>
-            <div class="faq">
-                <h2>"I received an email with a temporary password to access, but I did not request it, what should I do?"</h2>
-                <p>"No need to worry, your account is safe. If you didn't request the access code, don't worry, you may simply omit the email and that would be it. This can happen because someone entered a wrong email or tried to access your account, but as long as you do not share the code that you received, your account is safe."
-                </p>
-            </div>
-            <div class="faq active">
-                <h2>After deleting my account, can I get the codes back?"</h2>
-                <p>"No, if the deletion has already been executed, you will no longer be able to recover your codes."
-                </p>
-            </div>
-            <div class="faq">
-                <h2>Can I cancel the request to delete my account?</h2>
-                <p>"Yes, as long as the process has not been executed. At any time you can access your profile and in the account tab you can cancel the application process."
-                </p>
-            </div>
-            <div class="faq">
-                <h2>How can I contact a user?</h2>
-                <p>"If the user has social networks added to their profile, you only need to click on one of them and you will be instantly redirected to their page from which you can establish direct contact with the user."
-                </p>
-            </div>
-            <div class="faq">
-                <h2>Can I downgrade if i delete my codes?</h2>
-                <p>Yes, but with certain conditions, you will not lose your level if you are an activer user, but if a period of 6 months of inactivity passes in your account you can lose your level, it will be recalculated according to your active codes on the platform." 
-                </p>
-            </div>
-            <div class="faq">
-                <h2>Do the created codes have any limits?</h2>
-                <p>"Each code you save must be less than 500KB in size and snippets must be less than 150KB"
-                </p>
-            </div>
-            <div class="faq">
-                <h2></h2>
-                <p>
-                </p>
-            </div>
-            <div class="faq">
-                <h2></h2>
-                <p>
-                </p>
-            </div>
-            <div class="faq">
-                <h2></h2>
-                <p>
-                </p>
-            </div>
-            <div class="faq">
-                <h2>How many codes can I have?</h2>
-                <p>
-                </p>"The number of codes allowed depends on the level you have in your account, check the table of levels and their benefits in your profile page. Snippets have no limits and limitations are not taken into account."
-            </div>
-            <div class="faq">
-                <h2>What licenses do the published codes have in skriper.dev?</h2>
-                <p>"When you publish code to skriper.dev it is then licensed under the MIT license. If your code is private we do not give it any license and you can license it as you may please, we recommend that you include the type of license as a comment in your code. Remember that when publishing a code in skriper.dev publicly other users can "fork" your code, skriper.dev keeps as a reference the original code from where the fork was made as an attribution of respective credits."
-                </p>
-            </div>
-            <div class="faq">
-                <h2>What are account levels?</h2>
-                <p>"These are ranges that allow accounts to be identified. These ranges are obtained by fulfilling some parameters that are described in your profile page."
-                </p>
-            </div>
-            <div class="faq">
-                <h2>What do I do if my code is copied?</h2>
-                <p>"Copying a code is performing a "copy & paste" and not a fork, the fork maintains the respective relationship with the code from which it was copied, but if you consider that the code was copied, you can send us a review request to our email. If you want to disable the fork option in your code, just go to settings in the editor and disable the fork option."
-                </p>
-            </div>
-            <div class="faq">
-                <h2>How can I add a mockup phone in my preview?</h2>
-                <p>"In your CSS add the next decoratoe:"
-                    <code>/* @skriper mockup:phone */</code>
-                </p>
-            </div>
-            <div class="faq">
-                <h2>How do I create picture of my code and share it?</h2>
-                <p>"Only select your code and press"
-                    <b>CTRL + Enter</b>
-                    "and customize your picture. In the next video we will show how you can execute your JS code and share it."
-                </p>
-            </div>
-            <div class="faq active">
-                <h2>How to Include External CDN Library</h2>
-                <p><iframe width="560" height="'315" src="#" title="How to Include External CDN Library"></iframe>
-                </p>
-            </div>
-            <div class="faq active">
-                <h2>How to Create Gradients</h2>
-                <p><iframe width="560" height="315" src="#" title="How to Create Gradients"
-                </p>
-            </div>
-        </div>
+    </section>
 
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-
-         <!-- this is the footer -->
-    <div class="footer">
+     <!-- this is the footer -->
+     <div class="footer">
         <div class="footer-content">
             <div class="footer-main">
-                <div><span class="logo-container"> <img src="footerskriper.svg" alt="skriper footer image"></span>
+                <div><span class="logo-container"> <img src="./imgforhome/footerskriper.svg"
+                            alt="skriper footer image"></span>
                     <div class="footer-info">
-                        <a href="#"> <span class="socials-icons"> <img src="twitter.svg" alt="twitter icon"></span></a>
-                        <a href="#"> <span class="socials-icons"> <img src="youtube.svg" alt="youtube icon"></span></a>
-                        <a href="#"> <span class="socials-icons"> <img src="facebook.svg"alt="facebook icon"></span></a>
+                        <a href="#"> <span class="socials-icons"> <img src="./imgforhome/twitter.svg"
+                                    alt="twitter icon"></span></a>
+                        <a href="#"> <span class="socials-icons"> <img src="./imgforhome/youtube.svg"
+                                    alt="youtube icon"></span></a>
+                        <a href="#"> <span class="socials-icons"> <img src="./imgforhome/facebook.svg"
+                                    alt="facebook icon"></span></a>
                     </div>
                 </div>
                 <div class="links">
@@ -167,8 +300,9 @@
                 </div>
                 <div>
                     <p class="copyright"> Copyright Skriper.dev © 2022 </p>
-                    <div> 
-                        <span class="contact-email"> <img src="email.svg" alt="skriper email contact"> </span>
+                    <div>
+                        <span class="contact-email"> <img src="./imgforhome/email.svg" alt="skriper email contact">
+                        </span>
                     </div>
                 </div>
             </div>
