@@ -1,79 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trends</title>
-    <link rel="stylesheet" href="./imgforhome/trendsfavicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>The place where your ideas come true•skriper</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <style>
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-
-    body{
-        background-color: #131313;
-        margin: auto;
-    }
-
-/* this is the navbar styles */
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    
-}
-.logo{
-    width: 40px;
-    height: 40px;
-    background-color: #131313;
-    position: fixed;
-    top: 10px;
-    left: 0;
-    margin: 0 10px;
-}
-
-ul {
-    overflow: hidden;
-    background-color: #131313;
-    display: flex;
-    list-style-type: none;
-    }
-  
-  
-  li a {
-    display: flex;
-    color: rgb(204, 201, 201);
-    text-align: center;
-    padding: 5px 5px;
-    text-decoration: none;
-    margin-top: 15px;
-  }
-  
-  
-  a:hover {
-    color: rgb(255, 254, 254);
-  }
-
-    </style>
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgforhome/skriperfavicon-32x32.png">
 </head>
+
 <body>
     <header>
         <!-- this is the navigation bar -->
         <nav class="navbar">
-        <a href="index.html"><img class=logo src="./imgforhome/skriper-logo-navbar.jpeg" alt="skriperlogo"></a>
-        <ul>
-            <li><a href="trends.html"><i class="fa fa-fw fa-fire"></i>Trends</a></li>
-            <li><a href="featured.html"><i class="fa fa-fw fa-star"></i>Featured</a></li>
-            <li><a href="latest.html"><i class="fa fa-fw fa-clock"></i>Latest</a></li>
-            <li><a href="startcoding.html">Start Coding</a></li>
-            <li><a href="#"><i class="fa fa-fw fa-user"></i>Login</a></li>
-            <li><a href="#"><i class="fa fa-fw fa-search"></i></a></li>
-        </ul>
-    </header> 
+            <a href="index.html"><img class=logo src="./imgforhome/skriper-logo-navbar.jpeg" alt="skriperlogo">
+            </a>
+            <ul style="display:flex; align-items:center;">
+                <li><a href="trends.html"><img src="./imgforhome/trendsfavicon.svg" alt=""> Trends</a></li>
+                <li><a href="featured.html"><img src="./imgforhome/featuredfavicon.svg" alt=""> </i>Featured</a></li>
+                <li><a href="latest.html"> <img src="./imgforhome/latestfavicon.svg" alt=""></i>Latest</a></li>
+                <li><button><a href="startcoding.html"><img src="./imgforhome/startcodingfavicon.svg" alt=""> Start
+                            Coding</a></button></li>
+                <li class="login"><a href="#"><img src="./imgforhome/loginfavicon.svg" alt=""></i>Login</a></li>
+                <li class="search"><a href="#"><i class="fa fa-fw fa-search"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="trends-page">
+        <div class="trends-content">
+            <div class="trends-toolbar">
+                <div class="trends-nav">
+                    <button class="trends-button"> <span class="trends-btn-icon-previous"> <img src="/imgfortrends/previous.svg"> </span></button>
+                    <button class="trends-button"> <span class="trends-btn-icon-1"> 1</span></button>
+                    <button class="trends-button"> <span class="trends-btn-icon-next"> <img src="/imgfortrends/next.svg"> </span></button>
+                </div>
+            </div>
+
+            <div class="trends-main">
+                <a class="trends-cards"> 
+                    <div class="trends-cover"> <img src="/imgfortrends/trendsimg12.jpeg"></div>
+                    <div class="sub-trends-info">
+                        <div class="bluecode">Code</div>
+                        <h2 class="subtrends-title">Image hover Zoom effect with Pure CSS</h2>
+                        <p class="subtrends-details"> A simple animation zooming-in images on hover event </p>
+                        <div class="trends-username">
+                            <img src="/imgfortrends/skriperrainbowicon.svg"> <span class="sub-trends-display-name"> Skriper</span>
+                        </div>
+                    </div>
+                    <div class="subtrends-footer">
+                        <div class="subtrends-stats">
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/fork.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                            <div class="subtrends-stat bord">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/seen.svg"> </span>
+                                <span class="subtrends-footer-label">14</span>
+                            </div>
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/starred.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="trends-cards"> 
+                    <div class="trends-cover"> <img src="/imgfortrends/trendsimg10.jpeg"></div>
+                    <div class="sub-trends-info">
+                        <div class="bluecode">Code</div>
+                        <h2 class="subtrends-title">Example SASS Loader</h2>
+                        <p class="subtrends-details"> Example how to use SASS loader into skriper.dev </p>
+                        <div class="trends-username">
+                            <img src="/imgfortrends/skriperblueicon.svg"> <span class="sub-trends-display-name"> Jodacame</span>
+                        </div>
+                    </div>
+                    <div class="subtrends-footer">
+                        <div class="subtrends-stats">
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/fork.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                            <div class="subtrends-stat bord">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/seen.svg"> </span>
+                                <span class="subtrends-footer-label">16</span>
+                            </div>
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/starred.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="trends-cards">
+                    <div class="trends-cover"> <img src="/imgfortrends/trendsimg6.jpeg"></div>
+                    <div class="sub-trends-info">
+                        <div class="bluecode">Code</div>
+                        <h2 class="subtrends-title">NETFLIX</h2>
+                        <div class="trends-username">
+                            <img src="/imgfortrends/skriperblueicon.svg"> <span class="sub-trends-display-name"> midemario</span>
+                        </div>
+                    </div>
+                    <div class="subtrends-footer">
+                        <div class="subtrends-stats">
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/fork.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                            <div class="subtrends-stat bord">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/seen.svg"> </span>
+                                <span class="subtrends-footer-label">4</span>
+                            </div>
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/starred.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="trends-cards">
+                    <div class="trends-cover"> <img src="/imgfortrends/trendsimg7.jpeg"></div>
+                    <div class="sub-trends-info">
+                        <div class="bluecode">Code</div>
+                        <h2 class="subtrends-title">Swag</h2>
+                        <div class="trends-username">
+                            <img src="/imgfortrends/skriperblueicon.svg"> <span class="sub-trends-display-name">splsplass</span>
+                        </div>
+                    </div>
+                    <div class="subtrends-footer">
+                        <div class="subtrends-stats">
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/fork.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                            <div class="subtrends-stat bord">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/seen.svg"> </span>
+                                <span class="subtrends-footer-label">4</span>
+                            </div>
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/starred.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="trends-cards">
+                    <div class="trends-cover"> <img src="/imgfortrends/trendsimg3.jpeg"></div>
+                    <div class="sub-trends-info">
+                        <div class="bluecode">Code</div>
+                        <h2 class="subtrends-title">404 Page Template</h2>
+                        <div class="trends-username">
+                            <img src="/imgfortrends/skriperblueicon.svg"> <span class="sub-trends-display-name">jacktorch</span>
+                        </div>
+                    </div>
+                    <div class="subtrends-footer">
+                        <div class="subtrends-stats">
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/fork.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                            <div class="subtrends-stat bord">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/seen.svg"> </span>
+                                <span class="subtrends-footer-label">4</span>
+                            </div>
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/starred.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="trends-cards">
+                    <div class="trends-cover"> <img src="/imgfortrends/trendsimg1.jpeg"></div>
+                    <div class="sub-trends-info">
+                        <div class="bluecode">Code</div>
+                        <h2 class="subtrends-title">TRIBUTE PAGE FOR STEVE JOBS</h2>
+                        <div class="trends-username">
+                            <img src="/imgfortrends/skriperblueicon.svg"> <span class="sub-trends-display-name">rj01</span>
+                        </div>
+                    </div>
+                    <div class="subtrends-footer">
+                        <div class="subtrends-stats">
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/fork.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                            <div class="subtrends-stat bord">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/seen.svg"> </span>
+                                <span class="subtrends-footer-label">20</span>
+                            </div>
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/starred.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="trends-cards">
+                    <div class="trends-cover"> <img src="/imgfortrends/trendsimg4.jpeg"></div>
+                    <div class="sub-trends-info">
+                        <div class="bluecode">Code</div>
+                        <h2 class="subtrends-title">situp</h2>
+                        <div class="trends-username">
+                            <img src="/imgfortrends/skriperblueicon.svg"> <span class="sub-trends-display-name">infony</span>
+                        </div>
+                    </div>
+                    <div class="subtrends-footer">
+                        <div class="subtrends-stats">
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/fork.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                            <div class="subtrends-stat bord">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/seen.svg"> </span>
+                                <span class="subtrends-footer-label">2</span>
+                            </div>
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/starred.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="trends-cards">
+                    <div class="trends-cover"> <img src="/imgfortrends/trendsimg9.jpeg"></div>
+                    <div class="sub-trends-info">
+                        <div class="bluecode">Code</div>
+                        <h2 class="subtrends-title">digital clock</h2>
+                        <div class="trends-username">
+                            <img src="/imgfortrends/skriperblueicon.svg"> <span class="sub-trends-display-name">26harshti</span>
+                        </div>
+                    </div>
+                    <div class="subtrends-footer">
+                        <div class="subtrends-stats">
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/fork.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                            <div class="subtrends-stat bord">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/seen.svg"> </span>
+                                <span class="subtrends-footer-label">17</span>
+                            </div>
+                            <div class="subtrends-stat">
+                                <span class="subtrends-footer-icon"> <img src="/imgfortrends/starred.svg"> </span>
+                                <span class="subtrends-footer-label">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div><span class="logo-container"> <img src="./imgforhome/footerskriper.svg" alt="skriper footer image"></span>
+                    <div class="footer-info">
+                        <a href="#"> <span class="socials-icons"> <img src="./imgforhome/twitter.svg" alt="twitter icon"></span></a>
+                        <a href="#"> <span class="socials-icons"> <img src="./imgforhome/youtube.svg" alt="youtube icon"></span></a>
+                        <a href="#"> <span class="socials-icons"> <img src="./imgforhome/facebook.svg" alt="facebook icon"></span></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <h2>Links of Interest</h2>
+                    <a href="faq.html" class>FAQ</a>
+                    <a href="#" class="interest-links">Twitter</a>
+                    <a href="#" class="interest-links">Facebook</a>
+                    <a href="#" class="interest-links">Youtube</a>
+                </div>
+                <div>
+                    <p class="copyright"> Copyright Skriper.dev © 2022 </p>
+                    <div>
+                        <span class="contact-email"> <img src="./imgforhome/email.svg" alt="skriper email contact">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
