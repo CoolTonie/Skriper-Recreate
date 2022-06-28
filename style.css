@@ -1,97 +1,242 @@
 @import url('https://fonts.googleapis.com/css2?familfamily=Poppins:wght@300;400;500;700&display=swap');
 
-* {
-    margin: 0;
+* { margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
+}
 
-    body{
-        background-color: #131313;
-        margin: auto;
-    }
+body {
+    background-color: #131313;
+    min-height: 100vh;
+}
 
-/* this is the navbar styles */
+/*scrollbar setting*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #070707; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 252, 252); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(61, 61, 61); 
+  }
+
+/* NAVBAR STYLING STARTS HERE */
 .navbar {
     display: flex;
     justify-content: space-between;
-    
-}
-.logo {
-    width: 40px;
-    height: 40px;
-    background-color: #131313;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 50px;
+    color: rgb(238, 238, 238);
     position: fixed;
-    top: 10px;
-    left: 0;
+    width: 100%;   
+    background: #131313; 
+    top: 0;   
+}
+
+.logo {
+    width: 40;
+    height: 40;
+    background-color: #131313;
     margin: 0 10px;
 }
 
 ul {
     overflow: hidden;
+    display: flex;
     background-color: #131313;
-    display: flex;
     list-style-type: none;
-    }
+}
   
-  
-  li a {
-    display: flex;
+li  a {
     color: rgb(204, 201, 201);
     text-align: center;
-    padding: 5px 5px;
+    padding: 5px 15px;
     text-decoration: none;
     margin-top: 15px;
-  }
-  
-  
-  a:hover {
+}
+
+.navbar li button {
+    font-weight: 700;
+    border: 0;
+    box-shadow: 0 0 20px #000;
+    background: linear-gradient(160deg, #33a9dc,#4c83ff);
+    padding: 7px 5px;
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    transition: box-shadow 0.2 linear;
+}
+
+.login {
+    background-color: #000;
+    border: 1px solid#000;
+    padding: 7px 2px;
+    font-weight: 700;
+    margin-left: 15px;
+    border-radius: 3px;
+}
+
+.search {
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 7px 2px;
+    font-weight: 700;
+    margin-left: 15px;
+    border-radius: 3px;
+}
+
+.navbar ul img {
+    width:16px;
+    margin-right: 7px;
+}
+
+.navbar a:hover {
     color: rgb(255, 254, 254);
-  }
+}
+/* NAVBAR STYLING ENDS HERE */
 
- 
-  /* section four styling */
 
-.section-four {
-    margin: auto 200px;
-
+/* SECTION 2 - 4 STARTS HERE */
+.container {
+    width: 65%;
+    padding: 30px;
+    margin: 100px auto auto;
 }
 
-.one, .two, .three, .four {
+.main-content {
+    font-size: 2rem!important;
+    text-align: center!important;
+    color: #eee;
+}
+
+.imglogo {
+    width: 256px;
+    height: 75px;
+    fill: none;
+}
+
+.the-place {
+    line-height: 90px;
+    font-size: 70px;
+    margin: auto;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(
+      292.46deg,
+      #27ae60 17.79%,
+      #2f80ed 35.92%,
+      #9b51e0 54.06%,
+      #eb5757 71.08%,
+      #f2994a 87.36%
+    );
+}
+
+.the-playground {
+    color: #eee;
+    line-height: 30px;
+    font-size: 26px; 
+    margin-top: 15px;
+}
+
+.js-editor {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.explore {
+    color: #eee;
+    font-size: 1.3rem;
+} 
+
+.col {
     display: flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-gap: 20px;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.section-four img {
+.row {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: #eee;
+}
+
+.row h2 {
+    color: #eee;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.row p {
+    color: #eee;
+    font-size: 16px;
+    margin-top: 4px;
+    line-height: 20px;
+}
+
+.col img {
     width: 100%;
     height: 100%;
-    max-width: 300px;
-    margin-right: 40px;
-}
-.text h2{
-    color: #eeeeee;
-    font-size: 20px;
-    text-align: start;
-}
-.text p{
-    color: #eeeeee;
-    font-size: 16px;
+    max-width: 350px;
+    margin: auto;
 }
 
-
-/* this is the footer styles */
-.footer, .footer-content {
+.sect-4 {
+    display: flex;
+    margin-top: 20px;
     justify-content: space-between;
+    grid-gap: 20px;
+    gap: 20px;
 }
-.footer {
+
+.sect-4 img {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    margin-right: 20px;
+}
+
+.sect-4 h2 {
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    font-weight: bold;
     color: #eee;
+}
+
+.sect-4 p {
+    margin-top: 4px;
+    color: #eee;
+    line-height: 25px;
+}
+/* SECTION 2 - 4 ENDS HERE */
+
+/* FOOTER STYLING STARTS HERE */
+.footer {
     margin-top: 50px;
     background-color: hsla(0,0%,100%,.05);
-}
-
+} 
 .footer .footer-content {
     max-width: 1000px;
     width: 100%;
@@ -171,11 +316,12 @@ span.contact-email img {
     height: 17; 
     fill: none;
 }
+/* FOOTER STYLING ENDS HERE */
 
 
-/* this is styles for faq page */
+/* FAQ STYLING STARTS HERE */
 
-.section {
+.footer-section {
     width: 100%;
     background: #414141;
     margin: 0 auto;
@@ -187,6 +333,7 @@ span.contact-email img {
     max-width: 96rem;
     margin: 0 auto;
     padding: 0 20px;
+    margin-top: 50px;
 }
 
 .search-toolbar {
@@ -195,7 +342,7 @@ span.contact-email img {
     border-radius: 2px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 67px;
     margin-bottom: 10px;
 }
 
@@ -205,7 +352,6 @@ span.contact-email img {
     background-color: transparent;
     font-size: 14px;
     color: #fff;
-    position: relative;
     outline: 0;
     font-family: Poppins,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
 }
@@ -254,7 +400,6 @@ span.contact-email img {
     cursor: pointer;
     background: #424242;
     color:#eee;
-    position: relative;
     align-content: center; 
     align-items: center;
     justify-content: center;
@@ -301,7 +446,6 @@ span.contact-email img {
 .answer {
     max-height: 0;
     overflow: hidden;
-    position: relative;
     background: #414141;
     transition: max-height 650ms;
 }
@@ -328,6 +472,11 @@ span.contact-email img {
     max-height: 20rem;
 }
 
+.faq-q.active .answer {
+    max-height: 20rem;
+}
+
+
 .faq iframe {
     display: block;
     margin: 20px auto auto;
@@ -336,23 +485,220 @@ span.contact-email img {
     width: 560;
     height: 315;
 }
+/* FAQ STYLING ENDS HERE */
 
 
+/* TRENDS PAGE STYLING STARTS HERE */
+.trends-page {
+    padding-top: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.trends-toolbar {
+    border-radius: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(37,37,37,8);
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trends-nav {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    grid-gap: 10px;
+    gap: 10px;
+}
+
+.trends-button {
+    width: 100%;
+    border: 0;
+    border-radius: 2px;
+    height: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    background: #424242;
+    color: #eee;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.trends-button span {
+    border: 0;
+    box-shadow: none;
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+}
+
+.trends-button img {
+    width: 16px;
+    height: 16px;
+}
+
+.trends-main {
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.trends-cards {
+    max-width: 325px;
+    display: flex;
+    flex-direction: column;
+    background-color: #252525;
+    overflow: hidden;
+}
+
+.trends-cover { 
+    background: #414141;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 185px;
+    overflow: hidden;
+}
+
+.trends-cover img {
+    width: 100%;
+    height: 185px;
+    border-radius: 2px;
+}
+
+.trends-cards:hover {
+    box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    transition: all .3s ease-in-out;
+}
+
+.trends-cards:hover .trends-cover img {
+    margin-top: -9px;
+    transition: all .4s ease;
+}
+
+.sub-trends-info {
+    padding: 20px 20px;
+}
+
+.bluecode {
+    font-size: 11px;
+    font-weight: 600;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+    color: #eee;
+    background: linear-gradient(160deg, #33a9dc, #4c83ff);
+}
+
+.subtrends-title {
+    font-size: 16px;
+    color: #eee;
+    margin: 5px 0 10px 0;
+}
+
+.subtrends-details {
+    font-size: 12px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    color: #eee;
+}
+
+.trends-username img {
+    width: 22px;
+    height: 22px;
+}
+
+/* Reminder to work on this part */
+.sub-trends-display-name {
+    font-size: 12px;
+    gap: 10px;
+    color: #eee;
+}    
+
+.subtrends-footer {
+    padding: 10px 10px;
+    margin-top: auto;
+    color: #eee;
+    background-color: hsla(0,0%,100%,.05);
+    justify-content: space-between;
+}
+
+.subtrends-stats {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: hsla(0,0%,100%,.1);
+    text-align: center;
+}
+
+.subtrends-stat {
+    align-items: center;
+    align-content: center;
+    width: 33.33%;
+    justify-content: center;
+}
+
+span.subtrends-footer-icon {
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.subtrends-footer-icon img {
+    width: 14;
+    height: 14;
+    fill: none;
+}
+
+.subtrends-footer-icon label {
+    font-size: 12px;
+}
+
+.bord {
+    border-left: 1px solid rgba(0,0,0,.2);
+    border-right: 1px solid rgba(0,0,0,.2);
+    box-shadow: -1px 0 0 0 hsl(0deg 0% 100% / 10%);
+}
 
 
+/* ANIMATION FOR TRENDS PAGE */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* MEDIA QUERIES FOR TRENDS PAGE*/
+@media screen and (max-width:1000px){
+ .trends-main {
+    grid-template-columns: repeat(3,1fr);
+ }   
+}
+@media screen and (max-width:800px){
+    .trends-main {
+       grid-template-columns: repeat(2,1fr);
+    }   
+   }
+   @media screen and (max-width:600px){
+    .trends-main {
+       grid-template-columns: repeat(1,1fr);
+    }   
+   }
