@@ -4,76 +4,272 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latest</title>
+    <title>Latest • Skriper</title>
     <link rel="stylesheet" href="./imgforhome/latestfavicon.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="latest.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imgforhome/skriperfavicon-32x32.png">
 
-    <style>
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-
-    body{
-        background-color: #131313;
-        margin: auto;
-    }
-
-/* this is the navbar styles */
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    
-}
-.logo{
-    width: 40px;
-    height: 40px;
-    background-color: #131313;
-    position: fixed;
-    top: 10px;
-    left: 0;
-    margin: 0 10px;
-}
-
-ul {
-    overflow: hidden;
-    background-color: #131313;
-    display: flex;
-    list-style-type: none;
-    }
-  
-  
-  li a {
-    display: flex;
-    color: rgb(204, 201, 201);
-    text-align: center;
-    padding: 5px 5px;
-    text-decoration: none;
-    margin-top: 15px;
-  }
-  
-  
-  a:hover {
-    color: rgb(255, 254, 254);
-  }
-
-    </style>
 </head>
 <body>
     <header>
         <!-- this is the navigation bar -->
         <nav class="navbar">
-        <a href="index.html"><img class=logo src="./imgforhome/skriper-logo-navbar.jpeg" alt="skriperlogo"></a>
-        <ul>
-            <li><a href="trends.html"><i class="fa fa-fw fa-fire"></i>Trends</a></li>
-            <li><a href="featured.html"><i class="fa fa-fw fa-star"></i>Featured</a></li>
-            <li><a href="latest.html"><i class="fa fa-fw fa-clock"></i>Latest</a></li>
-            <li><a href="startcoding.html">Start Coding</a></li>
-            <li><a href="#"><i class="fa fa-fw fa-user"></i>Login</a></li>
-            <li><a href="#"><i class="fa fa-fw fa-search"></i></a></li>
-        </ul>
+           <div class="logo"> <a href="index.html"><img class=logo src="./imgforhome/skriper-logo-navbar.jpeg" alt="skriperlogo">
+            </a>
+            <div class="latest">
+                <h3>Latest</h3>
+                <p>Latest codes published</p>
+                </div></div>
+            <ul style="display:flex; align-items:center;">
+                <li><a href="trends.html" ><img src="./imgforhome/trendsfavicon.svg"  alt=""> Trends</a></li>
+                <li><a href="featured.html"><img src="./imgforhome/featuredfavicon.svg" alt=""> </i>Featured</a></li>
+                <li><a href="latest.html"> <img src="./imgforhome/latestfavicon.svg" alt=""></i>Latest</a></li>
+                <li><button><a href="#"><img src="./imgforhome/startcodingfavicon.svg" alt=""> Start Coding</a></button></li>
+                <li class="login"><a href="#"><img src="./imgforhome/loginfavicon.svg"  alt=""></i>Login</a></li>
+                <li class="search"><a href="#"><i class="fa fa-fw fa-search"></i></a></li>
+            </ul>
+        </nav>
     </header>
+    <div class="nextbutton">
+        
+        <img class="previous round" src="./imgforlatest/previous.svg" alt="">
+        <p class="one">1</p>
+        <img class="next round" src="./imgforlatest/next.svg" alt="">
+    </div>
+
+    <!-- image cards -->
+<div class="imgcardcont">
+     <div class="imgcards" >
+        
+        <div class="imgbg">
+        <img src="./imgforlatest/lastestimg1.jpeg" class="img1" alt="" >
+        </div>    
+        
+        <div class="items1">
+        <h5 >CODE</h5>
+        <p >Situp</p>
+        </div>
+        
+        <div class="items2" >
+            <img src="./imgforlatest/skriperblueicon.svg" alt="" >
+            <p>Infony</p>
+
+        </div>
+        
+        <div class="item3bg">
+        <div class="items3" >
+            <div class="item5" > <img src="./imgforlatest/fork.svg" alt=""> <p class="divider">0</p></div>
+            <div class="item6" ><img src="./imgforlatest/seen.svg" alt=""> <p class="divider">4</p></div>
+            <div class="item7" ><img src="./imgforlatest/starred.svg" alt=""><p>0</p></div>
+        </div>
+        </div>
+    </div>
+     <div class="imgcards" >
+        
+        <div class="imgbg">
+        <img src="./imgforlatest/latestimg10.jpeg" class="img1" alt="" >
+        </div>    
+        
+        <div class="items1">
+        <h5 >CODE</h5>
+        <p >CoderByHeart</p>
+        </div>
+        
+        <div class="items2" >
+            <img src="./imgforlatest/skriperblueicon.svg" alt="" >
+            <p>coder</p>
+
+        </div>
+        
+        <div class="item3bg">
+        <div class="items3" >
+            <div class="item5" > <img src="./imgforlatest/fork.svg" alt=""> <p class="divider">0</p></div>
+            <div class="item6" ><img src="./imgforlatest/seen.svg" alt=""> <p class="divider">4</p></div>
+            <div class="item7" ><img src="./imgforlatest/starred.svg" alt=""><p>0</p></div>
+        </div>
+        </div>
+    </div>
+     <div class="imgcards" >
+        
+        <div class="imgbg">
+        <img src="./imgforlatest/latestimg3.jpeg" class="img1" alt="" >
+        </div>    
+        
+        <div class="items1">
+        <h5 >CODE</h5>
+        <p >df</p>
+        </div>
+        
+        <div class="items2" >
+            <img src="./imgforlatest/skriperblueicon.svg" alt="" >
+            <p>imaan</p>
+
+        </div>
+        
+        <div class="item3bg">
+        <div class="items3" >
+            <div class="item5" > <img src="./imgforlatest/fork.svg" alt=""> <p class="divider">0</p></div>
+            <div class="item6" ><img src="./imgforlatest/seen.svg" alt=""> <p class="divider">4</p></div>
+            <div class="item7" ><img src="./imgforlatest/starred.svg" alt=""><p>0</p></div>
+        </div>
+        </div>
+    </div>
+     <div class="imgcards" >
+        
+        <div class="imgbg">
+        <img src="./imgforlatest/latestimg4.jpeg" class="img1" alt="" >
+        </div>    
+        
+        <div class="items1">
+        <h5 >CODE</h5>
+        </div>
+        
+        <div class="items2" >
+            <img src="./imgforlatest/skriperblueicon.svg" alt="" >
+            <p class="imaan">imaan</p>
+
+        </div>
+        
+        <div class="item3bg">
+        <div class="items3" >
+            <div class="item5" > <img src="./imgforlatest/fork.svg" alt=""> <p class="divider">0</p></div>
+            <div class="item6" ><img src="./imgforlatest/seen.svg" alt=""> <p class="divider">4</p></div>
+            <div class="item7" ><img src="./imgforlatest/starred.svg" alt=""><p>0</p></div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="imgcardcont">
+     <div class="imgcards" >
+        
+        <div class="imgbg">
+        <img src="./imgforlatest/latestimg5.jpeg" class="img1" alt="" >
+        </div>    
+        
+        <div class="items1">
+        <h5 >CODE</h5>
+        <p >404 page-Social+Reviews</p>
+        </div>
+        
+        <div class="items2" >
+            <img src="./imgforlatest/skriperblueicon.svg" alt="" >
+            <p>jacktorch</p>
+
+        </div>
+        
+        <div class="item3bg">
+        <div class="items3" >
+            <div class="item5" > <img src="./imgforlatest/fork.svg" alt=""> <p class="divider">0</p></div>
+            <div class="item6" ><img src="./imgforlatest/seen.svg" alt=""> <p class="divider">4</p></div>
+            <div class="item7" ><img src="./imgforlatest/starred.svg" alt=""><p>0</p></div>
+        </div>
+        </div>
+    </div>
+     <div class="imgcards" >
+        
+        <div class="imgbg">
+        <img src="./imgforlatest/latestimg11.jpeg" class="img1" alt="" >
+        </div>    
+        
+        <div class="items1">
+        <h5 >CODE</h5>
+        <p>Reviews Page Persuasion Copy</p>
+        </div>
+        
+        <div class="items2" >
+            <img src="./imgforlatest/skriperblueicon.svg" alt="" >
+            <p>jacktorch</p>
+
+        </div>
+        
+        <div class="item3bg">
+        <div class="items3" >
+            <div class="item5" > <img src="./imgforlatest/fork.svg" alt=""> <p class="divider">0</p></div>
+            <div class="item6" ><img src="./imgforlatest/seen.svg" alt=""> <p class="divider">4</p></div>
+            <div class="item7" ><img src="./imgforlatest/starred.svg" alt=""><p>0</p></div>
+        </div>
+        </div>
+    </div>
+     <div class="imgcards" >
+        
+        <div class="imgbg">
+        <img src="./imgforlatest/latestimg7.jpeg" class="img1" alt="" >
+        </div>    
+        
+        <div class="items1">
+        <h5 >CODE</h5>
+        <p >change color and quote</p>
+        </div>
+        
+        <div class="items2" >
+            <img src="./imgforlatest/skriperblueicon.svg" alt="" >
+            <p>fares73</p>
+
+        </div>
+        
+        <div class="item3bg">
+        <div class="items3" >
+            <div class="item5" > <img src="./imgforlatest/fork.svg" alt=""> <p class="divider">0</p></div>
+            <div class="item6" ><img src="./imgforlatest/seen.svg" alt=""> <p class="divider">4</p></div>
+            <div class="item7" ><img src="./imgforlatest/starred.svg" alt=""><p>0</p></div>
+        </div>
+        </div>
+    </div>
+     <div class="imgcards" >
+        
+        <div class="imgbg">
+        <img src="./imgforlatest/latestimg6.jpeg" class="img1" alt="" >
+        </div>    
+        
+        <div class="items1">
+        <h5 >CODE</h5>
+        <p >NETFLIX</p>
+        </div>
+        
+        <div class="items2" >
+            <img src="./imgforlatest/skriperblueicon.svg" alt="" >
+            <p>midemario</p>
+
+        </div>
+        
+        <div class="item3bg">
+        <div class="items3" >
+            <div class="item5" > <img src="./imgforlatest/fork.svg" alt=""> <p class="divider">0</p></div>
+            <div class="item6" ><img src="./imgforlatest/seen.svg" alt=""> <p class="divider">4</p></div>
+            <div class="item7" ><img src="./imgforlatest/starred.svg" alt=""><p>0</p></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+     <!-- this is the footer -->
+     <div class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div><span class="logo-container"> <img src="./imgforhome/footerskriper.svg" alt="skriper footer image"></span>
+                    <div class="footer-info">
+                        <a href="#"> <span class="socials-icons"> <img src="./imgforhome/twitter.svg" alt="twitter icon"></span></a>
+                        <a href="#"> <span class="socials-icons"> <img src="./imgforhome/youtube.svg" alt="youtube icon"></span></a>
+                        <a href="#"> <span class="socials-icons"> <img src="./imgforhome/facebook.svg" alt="facebook icon"></span></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <h2>Links of Interest</h2>
+                    <a href="faq.html" class>FAQ</a>
+                    <a href="#" class="interest-links">Twitter</a>
+                    <a href="#" class="interest-links">Facebook</a>
+                    <a href="#" class="interest-links">Youtube</a>
+                </div>
+                <div>
+                    <p class="copyright"> Copyright Skriper.dev © 2022 </p>
+                    <div> 
+                        <span class="contact-email"> <img src="./imgforhome/email.svg" alt="skriper email contact"> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
