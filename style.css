@@ -65,7 +65,7 @@ ul {
 }
   
 li  a {
-    color: rgb(204, 201, 201);
+    color: #eeeeee;
     text-align: center;
     padding: 5px 15px;
     text-decoration: none;
@@ -79,9 +79,12 @@ li  a {
     background: linear-gradient(160deg, #33a9dc,#4c83ff);
     padding: 7px 5px;
     font-family: "Open Sans", sans-serif;
-    border: 1px solid #eee;
-    border-radius: 3px;
+    /* I REMOVED THE BORDER BECAUSE THE ORIGINAL PAGE HAS NO BORDER AND NOTE THAT THERE IS A MIXUP ON THE HOVER EFFECTS. @SADIYA IF YOU DONT UNDERSTAND ASK ME!!!!!! */
+    border-radius: 2px;
     transition: box-shadow 0.2 linear;
+}
+.navbar li button:hover{
+    opacity: 0.9;
 }
 
 .login {
@@ -108,7 +111,7 @@ li  a {
 }
 
 .navbar a:hover {
-    color: rgb(255, 254, 254);
+
 }
 /* NAVBAR STYLING ENDS HERE */
 

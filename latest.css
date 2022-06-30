@@ -164,30 +164,49 @@ li  a {
         /* image cards style*/
         
          .imgcardcont{
-            display:flex; 
-            margin:auto;
-            gap: 10px;
-            padding: 10px 20px 20px;
+            display:grid;
+            grid-template-columns: repeat(4, 1fr); 
+            margin-top: 20px;
+            gap: 20px;
+            padding:0 20px;
+            overflow: hidden;
             cursor: pointer;
 
         } 
         
          .imgcards{
             margin:20px auto; 
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
             background-color: #252525;
-            width: 315px;
-            height: 350px; 
+            max-width: 315px;
+            /* height: 350px;  */
             text-align: center;
+            animation: transition 0.4s ease-in-out;
             
             /* padding: 20px; */
         } 
         
+@keyframes transition {
+    0%{
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+        
         .imgcards .imgbg{
             background-color: #414141;
-            width: 315px;
+            width: 100%;
             height: 185px;
+            border-radius: 2px;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
         }
         .items1 h5{    
             text-align:center;
