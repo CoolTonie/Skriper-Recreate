@@ -156,12 +156,13 @@
     line-height: 1.5rem;
 }
 
-.faq-q:target .answer {
+.faq-q.active .answer {
     max-height: 20rem;
 }
 
-.faq-q.active .answer {
-    max-height: 20rem;
+.faq-q.active .faq-link {
+    font-size: 22px;
+    font-weight: 600;
 }
 
 

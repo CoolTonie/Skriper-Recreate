@@ -118,7 +118,7 @@
 
 .trends-cover img {
     width: 100%;
-    height: 185px;
+    /* height: 185px; */
     border-radius: 2px;
 }
 
@@ -161,6 +161,7 @@
     margin-bottom: 10px;
     color: #949292;
     font-weight: 600;
+
 }
 
 .trends-username img {
@@ -168,12 +169,16 @@
     height: 22px;
 }
 
-/* Reminder to work on this part */
+.trends-username {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
 .sub-trends-display-name {
     font-size: 12px;
-    gap: 10px;
     color: #eee;
-}    
+} 
 
 .subtrends-footer {
     padding: 10px 10px;
