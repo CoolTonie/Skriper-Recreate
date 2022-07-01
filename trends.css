@@ -87,8 +87,25 @@
     background-color: #252525;
     overflow: hidden;
     cursor: pointer;
+    animation: transition 0.4s ease-in-out;
     
 }
+/* .trending{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+@keyframes transition {
+    0%{
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 
 .trends-cover { 
     background: #414141;
@@ -123,6 +140,8 @@
     font-size: 11px;
     font-weight: 600;
     display: inline-block;
+    text-transform: uppercase;
+    padding-top: 2px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 2px;
@@ -139,8 +158,10 @@
 .subtrends-details {
     font-size: 12px;
     overflow: hidden;
-    margin-bottom: 12px;
-    color: #eee;
+    margin-bottom: 10px;
+    color: #949292;
+    font-weight: 600;
+
 }
 
 .trends-username img {
@@ -214,18 +235,38 @@ span.subtrends-footer-icon {
 
 
 /* MEDIA QUERIES FOR TRENDS PAGE*/
-@media screen and (max-width:1000px){
+@media screen and (max-width:939px){
  .trends-main {
     grid-template-columns: repeat(3,1fr);
  }   
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:639px){
     .trends-main {
        grid-template-columns: repeat(2,1fr);
     }   
    }
-   @media screen and (max-width:600px){
+   @media screen and (max-width:539px){
     .trends-main {
        grid-template-columns: repeat(1,1fr);
+       /* max-width: 422px; */
     }   
    }
+
+   @media screen and (max-width: 768px) {
+    .spot, .pots, .footer-info{
+        display: none;
+    }
+    .footer-main {
+        flex-direction: column;
+    }
+
+    .links, .copyright {margin-top: 20px;}
+    .footer .footer-content {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: medium;
+    }
+}
+   

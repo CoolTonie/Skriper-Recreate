@@ -5,15 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Featured • Skriper</title>
-    <link rel="stylesheet" href="./imgforhome/featuredfavicon.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="featured.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="featured.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./imgforhome/skriperfavicon-32x32.png">
 
-
-
 </head>
+
 <body>
     <header>
         <!-- this is the navigation bar -->
@@ -37,26 +35,15 @@
 
     <div class="wrapper">
         <div class="content">
-         <div class="toolbar">
-            <div class="direction">
-                <div class="center">
-                    <button disabled class="buttoned" opacity: 0.8;>
-                        <span class="icon-container">
-                            <img src="./imgforfeatured/previous.svg" alt="">
-                        </span>
-                    </button>
-                    <button disabled class="buttoned">
-                        <span style="padding:20px 19px;">1</span>
-                    </button>
-                    <button class="buttoned">
-                        <span class="icon-container">
-                            <img src="./imgforfeatured/next.svg" alt="">
-                        </span>
-                    </button>
+            <div class="featured-toolbar">
+                <div class="featured-nav">
+                    <button disabled class="featured-button"> <span class="featured-btn-icon-previous"> <img src="./imgforfeatured/previous.svg"> </span></button>
+                    <button disabled class="featured-button"> <span class="featured-btn-icon-1"> 1</span></button>
+                    <button class="featured-button"> <span class="featured-btn-icon-next"> <img src="./imgforfeatured/next.svg"> </span></button>
                 </div>
             </div>
-         </div>
-         <a href="#" class="card">
+        <div class="featured-main">
+         <a href="#" class="card" style="animation-duration: 0s ;">
             <div class="cover">
                 <img src="./imgforfeatured/featuredimg1.jpg" alt="">
             </div>
@@ -99,7 +86,7 @@
             </div>
          </a>
 
-         <a href="#" class="card">
+         <a href="#" class="card" style="animation-duration: 0.25s ;">
             <div class="cover">
                 <img src="./imgforfeatured/featuredimg2.jpg" alt="">
             </div>
@@ -141,7 +128,7 @@
             </div>
          </a>
 
-         <a href="#" class="card">
+         <a href="#" class="card" style="animation-duration: 0.5s ;">
             <div class="cover">
                 <img src="./imgforfeatured/featuredimg3.jpg" alt="">
             </div>
@@ -184,7 +171,7 @@
             </div>
          </a>
 
-         <a href="#" class="card">
+         <a href="#" class="card" style="animation-duration: 0.75s ;">
             <div class="cover">
                 <img src="./imgforfeatured/featuredimg4.jpg" alt="">
             </div>
@@ -227,7 +214,7 @@
             </div>
          </a>
 
-         <a href="#" class="card">
+         <a href="#" class="card" style="animation-duration: 1.0s ;">
             <div class="cover">
                 <img src="./imgforfeatured/featuredimg5.jpg" alt="">
             </div>
@@ -270,7 +257,7 @@
             </div>
          </a>
 
-         <a href="#" class="card">
+         <a href="#" class="card" style="animation-duration: 1.25s ;">
             <div class="cover">
                 <img src="./imgforfeatured/featuredimg6.jpg" alt="">
             </div>
@@ -313,7 +300,7 @@
             </div>
          </a>
 
-         <a href="#" class="card">
+         <a href="#" class="card" style="animation-duration: 1.5s ;">
             <div class="cover">
                 <img src="./imgforfeatured/featuredimg7.jpg" alt="">
             </div>
@@ -356,7 +343,7 @@
             </div>
          </a>
 
-         <a href="#" class="card">
+         <a href="#" class="card" style="animation-duration: 1.75s ;">
             <div class="cover">
                 <img src="./imgforfeatured/featuredimg8.jpg" alt="">
             </div>
@@ -397,8 +384,35 @@
                     </div>
                 </div>
             </div>
-         </a>
+          </a>
+         </div>
         </div>
     </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div><span class="logo-container"> <img src="./imgforhome/footerskriper.svg" alt="skriper footer image"></span>
+                    <div class="footer-info">
+                        <a href="#"> <span class="socials-icons"> <img src="./imgforhome/twitter.svg" alt="twitter icon"></span></a>
+                        <a href="#"> <span class="socials-icons"> <img src="./imgforhome/youtube.svg" alt="youtube icon"></span></a>
+                        <a href="#"> <span class="socials-icons"> <img src="./imgforhome/facebook.svg" alt="facebook icon"></span></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <h2>Links of Interest</h2>
+                    <a href="faq.html" class>FAQ</a>
+                    <a href="#" class="interest-links">Twitter</a>
+                    <a href="#" class="interest-links">Facebook</a>
+                    <a href="#" class="interest-links">Youtube</a>
+                </div>
+                <div>
+                    <p class="copyright"> Copyright Skriper.dev © 2022 </p>
+                    <div>
+                        <span class="contact-email"> <img src="./imgforhome/email.svg" alt="skriper email contact">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
