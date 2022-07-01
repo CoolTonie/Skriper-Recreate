@@ -72,8 +72,15 @@ li  a {
     margin-top: 15px;
 }
 
+.spot{
+    opacity: 70%;
+}
+
+.spot:hover{
+    opacity: 100%;
+}
 .navbar li button {
-    font-weight: 700;
+    font-weight: 600;
     border: 0;
     box-shadow: 0 0 20px #000;
     background: linear-gradient(160deg, #33a9dc,#4c83ff);
@@ -84,16 +91,20 @@ li  a {
     transition: box-shadow 0.2 linear;
 }
 .navbar li button:hover{
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
 .login {
     background-color: #000;
     border: 1px solid rgb(92, 88, 88);
     padding: 7px 2px;
-    font-weight: 700;
+    font-weight: 400;
     margin-left: 15px;
     border-radius: 3px;
+}
+
+.login:hover{
+    opacity: 0.7;
 }
 
 .search {
@@ -323,6 +334,47 @@ span.contact-email img {
     fill: none;
 }
 /* FOOTER STYLING ENDS HERE */
+
+
+
+/* FOOTER STYLING ENDS HERE */
+@media screen and (max-width: 1000px) {
+    .container{width: 95%;}
+}
+@media screen and (max-width: 800px) {
+    .container{
+        width: 100%;
+    }
+    .spot{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 95%;
+    }
+    .spot, .pots, .footer-info{
+        display: none;
+    }
+    .col, .footer-main {
+        flex-direction: column;
+    }
+    .sect-4{
+        flex-flow: column wrap-reverse;
+    }
+    
+    .links, .copyright {
+        margin-top: 20px;
+    }
+    .footer .footer-content {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: medium;
+    }
+}
 
 
 
