@@ -248,7 +248,11 @@ span.subtrends-footer-icon {
    @media screen and (max-width:539px){
     .trends-main {
        grid-template-columns: repeat(1,1fr);
-       /* max-width: 422px; */
+
+    }
+    .trends-cards{
+        max-width: 475px;
+
     }   
    }
 
