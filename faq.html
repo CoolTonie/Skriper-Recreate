@@ -50,7 +50,7 @@
         <div class="faq">
             
             <div class="faq-q" id="q1">
-                <a class="faq-link" href="#q1">
+                <a class="faq-link">
                     Where can I change my password?
                     <i class="icon ion-md-add"></i>
                     <i class="icon ion-md-remove"></i>
@@ -65,7 +65,7 @@
             </div>
 
             <div class="faq-q" id="q2">
-                <a class="faq-link" href="#q2">
+                <a class="faq-link">
                     How can I delete my account?
                     <i class="icon ion-md-add"></i>
                     <i class="icon ion-md-remove"></i>
@@ -79,7 +79,7 @@
             </div>
 
             <div class="faq-q" id="q3">
-                <a class="faq-link" href="#q3">
+                <a class="faq-link">
                     I received an email with a temporary password to access, but I did not request it, what should I
                     do?
                     <i class="icon ion-md-add"></i>
@@ -96,7 +96,7 @@
             </div>
 
             <div class="faq-q" id="q4">
-                <a class="faq-link" href="#q4">
+                <a class="faq-link">
                     After deleting my account, can I get the codes back?"
                     <i class="icon ion-md-add"></i>
                     <i class="icon ion-md-remove"></i>
@@ -109,7 +109,7 @@
             </div>
 
             <div class="faq-q" id="q5">
-                <a class="faq-link" href="#q5">
+                <a class="faq-link">
                     Can I cancel the request to delete my account?
                     <i class="icon ion-md-add"></i>
                     <i class="icon ion-md-remove"></i>
@@ -123,7 +123,7 @@
             </div>
 
             <div class="faq-q" id="q6">
-                <a class="faq-link" href="#q6">
+                <a class="faq-link">
                     How can I contact a user?
                     <i class="icon ion-md-add"></i>
                     <i class="icon ion-md-remove"></i>
@@ -138,7 +138,7 @@
             </div>
 
             <div class="faq-q" id="faq-q7">
-                <a class="faq-link" href="#q7">
+                <a class="faq-link">
                     Can I downgrade if I delete my codes?
                     <i class="icon ion-md-add"></i>
                     <i class="icon ion-md-remove"></i>
@@ -153,7 +153,7 @@
             </div>
 
             <div class="faq-q" id="q8">
-                <a class="faq-link" href="#q8">
+                <a class="faq-link">
                     Do the created codes have any limits?
                     <i class="icon ion-md-add"></i>
                     <i class="icon ion-md-remove"></i>
@@ -166,7 +166,7 @@
             </div>
 
             <div class="faq-q" id="q9">
-                <a class="faq-link" href="#q9">
+                <a class="faq-link">
                     How many codes can I have?
                     <i class="icon ion-md-add"></i>
                     <i class="icon ion-md-remove"></i>
@@ -181,7 +181,7 @@
             </div>
 
             <div class="faq-q" id="q10">
-                <a class="faq-link" href="#q10">
+                <a class="faq-link">
                     What licenses do the published codes have in skriper.dev?
                     <i class="icon ion-md-add"></i>
                     <i class="icon ion-md-remove"></i>
@@ -198,7 +198,7 @@
                 </div>
 
             <div class="faq-q" id="q11">
-                <a class="faq-link" href="#q11">
+                <a class="faq-link">
                     What are account levels?
                     <i class="icon ion-md-add"></i>
                     <i class="icon ion-md-remove"></i>
@@ -212,7 +212,7 @@
             </div>
 
             <div class="faq-q" id="q12">
-                <a class="faq-link" href="#q12">
+                <a class="faq-link">
                     What do I do if my code is copied?
                     <i class="icon ion-md-add"></i>
                     <i class="icon ion-md-remove"></i>
@@ -228,7 +228,7 @@
             </div>
 
             <div class="faq-q faq-video" id="q13">
-                <a class="faq-link" href="#q13">
+                <a class="faq-link">
                     How can I add a mockup phone in my preview?
                     <i class="icon ion-md-add"></i>
                     <i class="icon ion-md-remove"></i>
@@ -243,7 +243,7 @@
             </div>
 
             <div class="faq-q faq-video" id="q14">
-                <a class="faq-link" href="#q14">
+                <a class="faq-link">
                     How to create picture of my code and share it
                     <i class="icon ion-md-add"></i>
                     <i class="icon ion-md-remove"></i>
@@ -260,7 +260,7 @@
                 </div>
 
             <div class="faq-q faq-video" id="q15">
-                <a class="faq-link" href="#q15">
+                <a class="faq-link">
                     How to Include External CDN Library
                     <i class="icon ion-md-add"></i>
                     <i class="icon ion-md-remove"></i>
@@ -273,7 +273,7 @@
             </div>
 
             <div class="faq-q faq-video" id="q16">
-                <a class="faq-link" href="#q16">
+                <a class="faq-link">
                     How to Create Gradients
                     <i class="icon ion-md-add"></i>
                     <i class="icon ion-md-remove"></i>
@@ -320,24 +320,25 @@
         </div>
     </div>
 
-    <!-- Reminder to esolved the answer pop-down section later -->
-    <!-- <script>
-        var acc = document.getElementsByClassName("faq-q");
-        var i;
+    <script>
+        var divs = document.getElementsByClassName("faq-q");
 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-
-                var panel = this.nextElementSibling;
-                console.log(this);
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
+        function faqToggle() {
+            for(var i = 0; i < divs.length; i++){
+                if(this == divs[i]){
+                    if (divs[i].classList.contains('active') === false) {
+                        divs[i].classList.add('active');
+                    }
                 }
-            });
+                else {
+                    divs[i].classList.remove('active');
+                }
+            }
         }
-    </script> -->
+
+        [].forEach.call(divs, function(div) {
+            div.addEventListener('click', faqToggle);
+        });
+    </script>
 </body>
 </html>

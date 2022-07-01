@@ -118,7 +118,7 @@
 
 .trends-cover img {
     width: 100%;
-    height: 185px;
+    /* height: 185px; */
     border-radius: 2px;
 }
 
@@ -248,9 +248,11 @@ span.subtrends-footer-icon {
    @media screen and (max-width:539px){
     .trends-main {
        grid-template-columns: repeat(1,1fr);
+
     }
     .trends-cards{
         max-width: 475px;
+
     }   
    }
 
