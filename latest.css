@@ -81,7 +81,7 @@
 }
 
 .trends-cards {
-    max-width: 325px;
+    max-width: 475px;
     display: flex;
     flex-direction: column;
     background-color: #252525;
@@ -250,9 +250,14 @@ span.subtrends-footer-icon {
 @media screen and (max-width:539px){
     .trends-main {
        grid-template-columns: repeat(1,1fr);
-       /* max-width: 422px; */
+       /* max-width: 475px; */
     }   
 }
+    .card{
+        max-width: 475px;
+       }  
+   }
+
 
 @media screen and (max-width: 768px) {
     .spot, .pots, .footer-info{
