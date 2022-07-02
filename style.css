@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?familfamily=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 * { margin: 0;
     padding: 0;
@@ -10,6 +10,7 @@
 body {
     background-color: #131313;
     min-height: 100vh;
+    margin-bottom: -13px;
 }
 
 /*scrollbar setting*/
@@ -37,24 +38,53 @@ body {
 /* NAVBAR STYLING STARTS HERE */
 .navbar {
     display: flex;
-    justify-content: space-between;
-    padding-left: 5px;
+    padding-left: 15px;
     padding-right: 15px;
     height: 50px;
     color: rgb(238, 238, 238);
     position: fixed;
     width: 100%;   
     background: #131313; 
-    top: 0;   
-    padding-top: 10px;
+    top: 0;
 }
 
-.logo {
+.trending, .feat, .latest, .help, p.truncate {
+    font-size: 12px;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+div.logo {
     width: 40;
     height: 32;
+    display: flex;
+    align-items: center;
+    width: 100%;
     background-color: #131313;
-    margin: 0 10px;
-    
+}
+
+img.logo {
+    margin-right: 20px;
+}
+
+.navbar ul {
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+}
+
+.navbar ul * {
+    font-size: 14px !important;
+}
+
+.navbar ul li a {
+    display: flex;
 }
 
 ul {
@@ -67,9 +97,8 @@ ul {
 li  a {
     color: #eeeeee;
     text-align: center;
-    padding: 5px 15px;
+    padding: 0px 15px;
     text-decoration: none;
-    margin-top: 15px;
 }
 
 .spot{
@@ -79,19 +108,28 @@ li  a {
 .spot:hover{
     opacity: 100%;
 }
-.navbar li button {
+
+.navbar li.start-coding a {
     font-weight: 600;
-    border: 0;
+    border: 1px solid rgb(68 143 244);
     box-shadow: 0 0 20px #000;
     background: linear-gradient(160deg, #33a9dc,#4c83ff);
-    padding: 7px 5px;
+    padding: 7px 15px;
     font-family: "Open Sans", sans-serif;
     /* I REMOVED THE BORDER BECAUSE THE ORIGINAL PAGE HAS NO BORDER AND NOTE THAT THERE IS A MIXUP ON THE HOVER EFFECTS. @SADIYA IF YOU DONT UNDERSTAND ASK ME!!!!!! */
     border-radius: 2px;
     transition: box-shadow 0.2 linear;
 }
-.navbar li button:hover{
+.navbar li.start-coding a:hover{
     opacity: 0.7;
+}
+
+.navbar ul span {
+    margin-left: 7px;
+}
+
+.start-coding {
+    margin-left: 15px;
 }
 
 .login {
@@ -116,20 +154,28 @@ li  a {
     border-radius: 3px;
 }
 
-.navbar ul img {
-    width:16px;
-    margin-right: 7px;
+li.search i {
+    line-height: 21px;
 }
 
-.navbar a:hover {
-
+.navbar ul img {
+    width:14px;
+    vertical-align: bottom;
 }
 /* NAVBAR STYLING ENDS HERE */
 
+div.user span {
+    font-size: 12px;
+}
+
+.subtrends-footer * {
+    font-size: 12px !important;
+}
 
 /* SECTION 2 - 4 STARTS HERE */
 .container {
-    width: 65%;
+    width: 100%;
+    max-width: 1000px;
     padding: 30px;
     margin: 100px auto auto;
 }
@@ -222,7 +268,6 @@ li  a {
 .sect-4 {
     display: flex;
     margin-top: 20px;
-    justify-content: space-between;
     grid-gap: 20px;
     gap: 20px;
 }
@@ -339,8 +384,11 @@ span.contact-email img {
 
 /* FOOTER STYLING ENDS HERE */
 @media screen and (max-width: 1000px) {
-    .container{width: 95%;}
+    .container{
+        width: 95%;
+    }
 }
+
 @media screen and (max-width: 800px) {
     .container{
         width: 100%;
@@ -351,11 +399,11 @@ span.contact-email img {
 }
 
 @media screen and (max-width: 768px) {
-    .container{
-        width: 95%;
-    }
     .spot, .pots, .footer-info{
         display: none;
+    }
+    li.search i {
+        line-height: 14px;
     }
     .col, .footer-main {
         flex-direction: column;

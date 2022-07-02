@@ -236,26 +236,30 @@ span.subtrends-footer-icon {
 
 /* MEDIA QUERIES FOR TRENDS PAGE*/
 @media screen and (max-width:939px){
- .trends-main {
-    grid-template-columns: repeat(3,1fr);
+    .trends-main {
+        grid-template-columns: repeat(3,1fr);
  }   
 }
+
 @media screen and (max-width:639px){
     .trends-main {
        grid-template-columns: repeat(2,1fr);
     }   
-   }
-   @media screen and (max-width:539px){
+}
+
+@media screen and (max-width:539px){
     .trends-main {
        grid-template-columns: repeat(1,1fr);
        /* max-width: 475px; */
     }   
+}
     .card{
         max-width: 475px;
        }  
    }
 
-   @media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
     .spot, .pots, .footer-info{
         display: none;
     }
