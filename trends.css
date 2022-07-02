@@ -90,6 +90,10 @@
     animation: transition 0.4s ease-in-out;
     
 }
+/* .trending{
+    display: flex;
+    flex-direction: column;
+} */
 
 
 @keyframes transition {
@@ -157,6 +161,7 @@
     margin-bottom: 10px;
     color: #949292;
     font-weight: 600;
+
 }
 
 .trends-username img {
@@ -164,12 +169,16 @@
     height: 22px;
 }
 
-/* Reminder to work on this part */
+.trends-username {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
 .sub-trends-display-name {
     font-size: 12px;
-    gap: 10px;
     color: #eee;
-}    
+} 
 
 .subtrends-footer {
     padding: 10px 10px;
@@ -226,18 +235,40 @@ span.subtrends-footer-icon {
 
 
 /* MEDIA QUERIES FOR TRENDS PAGE*/
-@media screen and (max-width:1000px){
+@media screen and (max-width:939px){
  .trends-main {
     grid-template-columns: repeat(3,1fr);
  }   
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:639px){
     .trends-main {
        grid-template-columns: repeat(2,1fr);
     }   
    }
-   @media screen and (max-width:600px){
+   @media screen and (max-width:539px){
     .trends-main {
        grid-template-columns: repeat(1,1fr);
+    }
+    .trends-cards{
+        max-width: 475px;
     }   
    }
+
+   @media screen and (max-width: 768px) {
+    .spot, .pots, .footer-info{
+        display: none;
+    }
+    .footer-main {
+        flex-direction: column;
+    }
+
+    .links, .copyright {margin-top: 20px;}
+    .footer .footer-content {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: medium;
+    }
+}
+   
