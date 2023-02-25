@@ -1,9 +1,10 @@
 # Skriper-Recreate
 #### THIS IS THE FIRST ATTEMPT BY A GROUP OF (5) NEWBIES TO RECREATE A LIVE SITE AND COLLABORATE ON GITHUB
 ---
-### LANGUAGES USED
+### TECHNOLOGIES USED
 * HTML
 * CSS
+* JS
 ---
 ### RESOURCES
 ### skriper.dev (site recreated)
